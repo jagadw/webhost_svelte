@@ -4,12 +4,21 @@
 
 <header>
     <center>
-        <b>Start your free-trial today!</b>
-        <button>Get Started</button>
-        <button>Learn More</button>
+        <p>
+        <b>Belum punya akun? </b>
+        <button>Daftar</button>
+        <button>Bantuan</button>
+    </p>
     </center>
 </header>
 
 <style>
-    
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgb(103, 235, 52);
+        width: 100%;
+    }
 </style>
