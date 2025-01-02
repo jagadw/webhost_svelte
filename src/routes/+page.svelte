@@ -7,12 +7,13 @@
 
 <Header/>
 
-<br>
+<br><br>
     <center>
-        <h1>{title}</h1>
-        <h3>{desc}{title}!</h3>
+        <!-- <h1>{title}</h1>
+        <h3>{desc}{title}!</h3> -->
+        <h2>Domain</h2>
     </center>
-<br>
+<!-- <br> -->
 
 <Content/>
 
