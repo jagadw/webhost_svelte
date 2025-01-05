@@ -3,7 +3,7 @@
     <div class="container">
         <div class="login">
             <h1>Log In</h1>
-            <input type="text" placeholder="Masukan alamat email">
+            <input type="email" placeholder="Masukan alamat email">
             <br><br>
             <input type="password" placeholder="Masukan password">
             <br><br><br>
