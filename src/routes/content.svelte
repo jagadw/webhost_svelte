@@ -35,4 +35,92 @@
 
         <p>IDR. {price} <button>Add to chart</button> </p>
         </center>
+        
+        <center>
+        <br>
+        <h2>Paket Web Hosting</h2>
+    </center>
+    
+    <div class="paket-hosting">
+    <div class="package">
+        <img src="" alt="">
+        <b>Newbie</b>
+        <h3>IDR. 10.000 / Bulan</h3>
+        <p>
+            1 Domain <br>	
+            1 GB Storage <br>	
+            Unlimited Bandwidth	<br>
+            Unlimited Email Account	<br>
+            Free Domain <br><br>
+            <button>Add to chart</button>
+        </p>
+    </div>
+
+    <div class="package">
+        <img src="" alt="">
+        <b>Intermediate</b>
+        <h3>IDR. 20.000 / Bulan</h3>
+        <p>
+            1 Domain <br>	
+            2 GB Storage <br>	
+            Unlimited Bandwidth	<br>
+            Unlimited Email Account	<br>
+            Free Domain <br><br>
+            <button>Add to chart</button>
+        </p>
+    </div>
+
+    <div class="package">
+        <img src="" alt="">
+        <b>Expert</b>
+        <h3>IDR. 30.000 / Bulan</h3>
+        <p>
+            1 Domain <br>	
+            3 GB Storage <br>	
+            Unlimited Bandwidth	<br>
+            Unlimited Email Account	<br>
+            Free Domain <br><br>
+            <button>Add to chart</button>
+        </p>
+    </div>
+
+    <div class="package">
+        <img src="" alt="">
+        <b>Master</b>
+        <h3>IDR. 40.000 / Bulan</h3>
+        <p>
+            1 Domain <br>	
+            8 GB Storage <br>	
+            Unlimited Bandwidth	<br>
+            Unlimited Email Account	<br>
+            Free Domain <br><br>
+            <button>Add to chart</button>
+        </p>
+    </div>
+
+    </div>
 </div>
+
+<button class="chart">
+    <p>Chart</p>
+</button>
+<style>
+    .package {
+        border: solid black 1px;
+        /* width: 25%; */
+        padding: 25px;
+    }
+    .paket-hosting {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+    .chart {
+        position: fixed;
+        /* bottom: 0; */
+        right: 5px;
+        border-radius: 25px;
+        border: solid black 3px;
+        background-color: aquamarine;
+    }
+</style>
