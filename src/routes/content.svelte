@@ -3,6 +3,7 @@
     let domain;
     let price = 0;
     let showCart = false;
+    import Cart from "./cart.svelte";
 
     $: {
     if (domain == "com") {
@@ -116,9 +117,7 @@
         <button id="closeCart" on:click={toggleCart}>
             <p>Close</p>
         </button>
-        <h2>List</h2>
-        <p>1</p>
-        <p>2</p>
+        <Cart/>
     </div>
 </div>
 <style>
