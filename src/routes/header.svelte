@@ -6,7 +6,7 @@
     <center>
         <p>
         <b>Belum punya akun? </b>
-        <button>Daftar</button>
+        <a href="./register/">Daftar</a>
         <button>Bantuan</button>
     </p>
     </center>
