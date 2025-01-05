@@ -2,6 +2,7 @@
     let domain_name;
     let domain;
     let price = 0;
+    let showCart = false;
 
     $: {
     if (domain == "com") {
@@ -18,6 +19,11 @@
         price = 0;
     }
 }
+
+    function toggleCart() {
+        showCart = !showCart;
+    }
+
 </script>
 
     <div class="Content">
@@ -33,7 +39,7 @@
         </select>
         <p>{domain_name}.{domain}</p>
 
-        <p>IDR. {price} <button>Add to chart</button> </p>
+        <p>IDR. {price} <button>Add to Cart</button> </p>
         </center>
         
         <center>
@@ -52,7 +58,7 @@
             Unlimited Bandwidth	<br>
             Unlimited Email Account	<br>
             Free Domain <br><br>
-            <button>Add to chart</button>
+            <button>Add to Cart</button>
         </p>
     </div>
 
@@ -66,7 +72,7 @@
             Unlimited Bandwidth	<br>
             Unlimited Email Account	<br>
             Free Domain <br><br>
-            <button>Add to chart</button>
+            <button>Add to Cart</button>
         </p>
     </div>
 
@@ -80,7 +86,7 @@
             Unlimited Bandwidth	<br>
             Unlimited Email Account	<br>
             Free Domain <br><br>
-            <button>Add to chart</button>
+            <button>Add to Cart</button>
         </p>
     </div>
 
@@ -94,16 +100,27 @@
             Unlimited Bandwidth	<br>
             Unlimited Email Account	<br>
             Free Domain <br><br>
-            <button>Add to chart</button>
+            <button>Add to Cart</button>
         </p>
     </div>
 
     </div>
 </div>
 
-<button class="chart">
-    <p>Chart</p>
+<button class="Cart" on:click={toggleCart}>
+    <p>Cart</p>
 </button>
+
+<div id="Cart" style="display: {showCart ? 'flex' : 'none'};">
+    <div id="Cartmenu">
+        <button id="closeCart" on:click={toggleCart}>
+            <p>Close</p>
+        </button>
+        <h2>List</h2>
+        <p>1</p>
+        <p>2</p>
+    </div>
+</div>
 <style>
     .package {
         border: solid black 1px;
@@ -115,12 +132,39 @@
         justify-content: space-between;
         padding: 0 40px;
     }
-    .chart {
+    .Cart {
+        text-decoration: none;
         position: fixed;
         /* bottom: 0; */
         right: 5px;
         border-radius: 25px;
         border: solid black 3px;
         background-color: aquamarine;
+    }
+    #Cart {
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        /* display: none; */
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    #Cartmenu {
+        background-color: #fff;
+        padding: 5vw;
+    }
+
+    #closeCart {
+        text-decoration: none;
+        position: fixed;
+        bottom: 0;
+        right: 5px;
+        border-radius: 25px;
+        border: solid black 3px;
+        background-color: red;
     }
 </style>
